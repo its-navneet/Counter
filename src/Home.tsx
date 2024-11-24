@@ -74,7 +74,7 @@ export default function Home() {
     >
       <Box sx={{ padding: "40px", width: "100%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         <Typography
-          sx={{ fontSize: "22px", color: "#000000", padding: "10px" }}
+          sx={{fontSize: "20px", color: "#000000", padding: "10px",width: '300px', textAlign: 'center'}}
           component="div"
           gutterBottom
         >

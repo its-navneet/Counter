@@ -51,9 +51,8 @@ export default function History() {
           alignItems: "center",
           justifyContent: "center",
           paddingInline: "100px",
-          paddingBlock: "8px",
+          paddingBlock: "4px",
           width: "100%",
-          mr: 2,
           fontSize: "16px",
         }}
       >
@@ -62,7 +61,7 @@ export default function History() {
             <Typography sx={{fontSize:'18px', width: '300px', textAlign: 'center'}}>{dayjs(item.date).format("DD MMMM YYYY")}</Typography>
           }
           secondary={
-            <Box sx={{ marginTop: "14px", display: 'flex', justifyContent: 'center' }}>
+            <Box sx={{ marginTop: "8px", display: 'flex', justifyContent: 'center' }}>
               {item.meal.includes("Lunch") && (
                 <Typography
                   component="span"
@@ -113,13 +112,13 @@ export default function History() {
     >
       <Box sx={{ padding: "40px", width: "100%" }}>
         <Typography
-          sx={{ fontSize: "24px", color: "#000000", textAlign: "center", marginTop:'20px', fontWeight:'500' }}
+          sx={{ fontSize: "24px", color: "#000000", textAlign: "center",  fontWeight:'500' }}
         >
           Meal History
         </Typography>
         <Box sx={{
-            marginBlock: "10px",
-            height: "calc(100vh - 150px)",
+            marginTop: "10px",
+            height: "calc(100vh - 200px)",
             overflowY: "auto",
             "&::-webkit-scrollbar": {
               width: "4px",
