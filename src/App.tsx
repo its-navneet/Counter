@@ -9,9 +9,13 @@ import History from './History';
 import { styled } from '@mui/material/styles';
 
 const CustomBottomNavigationAction = styled(BottomNavigationAction)({
-  outline: 'none',
-  border: 'none',
   color: 'white',
+  '&:focus': {
+    outline: 'none',
+  },
+  '&.Mui-selected': {
+    outline: 'none',
+  },
 });
 
 export default function App() {
