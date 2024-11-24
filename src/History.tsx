@@ -59,10 +59,10 @@ export default function History() {
       >
         <ListItemText
           primary={
-            <Typography sx={{fontSize:'18px'}}>{dayjs(item.date).format("DD MMMM YYYY")}</Typography>
+            <Typography sx={{fontSize:'18px', width: '300px', textAlign: 'center'}}>{dayjs(item.date).format("DD MMMM YYYY")}</Typography>
           }
           secondary={
-            <Box sx={{ marginTop: "14px" }}>
+            <Box sx={{ marginTop: "14px", display: 'flex', justifyContent: 'center' }}>
               {item.meal.includes("Lunch") && (
                 <Typography
                   component="span"
