@@ -50,7 +50,7 @@ export default function History() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          paddingInline: "80px",
+          paddingInline: "100px",
           paddingBlock: "8px",
           width: "100%",
           mr: 2,
@@ -117,7 +117,23 @@ export default function History() {
         >
           Meal History
         </Typography>
+        <Box sx={{
+            marginBlock: "10px",
+            height: "calc(100vh - 100px)",
+            overflowY: "auto",
+            "&::-webkit-scrollbar": {
+              width: "8px",
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: "#888",
+              borderRadius: "4px",
+            },
+            "&::-webkit-scrollbar-thumb:hover": {
+              backgroundColor: "#555",
+            },
+          }}>
         <List>{meals.map(renderItem)}</List>
+        </Box>
       </Box>
     </Box>
   );
