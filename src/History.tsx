@@ -50,7 +50,7 @@ export default function History() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          paddingInline: "40px",
+          paddingInline: "80px",
           paddingBlock: "8px",
           width: "100%",
           mr: 2,
@@ -58,9 +58,11 @@ export default function History() {
         }}
       >
         <ListItemText
-          primary={dayjs(item.date).format("DD MMMM YYYY")}
+          primary={
+            <Typography sx={{fontSize:'18px'}}>{dayjs(item.date).format("DD MMMM YYYY")}</Typography>
+          }
           secondary={
-            <>
+            <Box sx={{ marginTop: "14px" }}>
               {item.meal.includes("Lunch") && (
                 <Typography
                   component="span"
@@ -90,7 +92,7 @@ export default function History() {
                   Dinner
                 </Typography>
               )}
-            </>
+            </Box>
           }
         />
       </Card>
@@ -109,7 +111,7 @@ export default function History() {
         justifyContent: "center",
       }}
     >
-      <Box sx={{ padding: "40px", width: '100%' }}>
+      <Box sx={{ padding: "40px", width: "100%" }}>
         <Typography
           sx={{ fontSize: "24px", color: "#000000", textAlign: "center" }}
         >
