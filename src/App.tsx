@@ -18,7 +18,7 @@ export default function App() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+    <Box sx={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', overflow: 'hidden' }}>
       {value === 0 && <Home />}
       {value === 1 && <History />}
       <BottomNavigation
