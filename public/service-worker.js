@@ -1,8 +1,9 @@
 const CACHE_NAME = 'meal-counter-cache-v1';
 const urlsToCache = [
   '/',
-  '/index.html',
+  '../index.html',
   '/manifest.json',
+  '/image.png'
 ];
 
 self.addEventListener('install', event => {
