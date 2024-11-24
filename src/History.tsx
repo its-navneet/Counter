@@ -113,16 +113,16 @@ export default function History() {
     >
       <Box sx={{ padding: "40px", width: "100%" }}>
         <Typography
-          sx={{ fontSize: "24px", color: "#000000", textAlign: "center" }}
+          sx={{ fontSize: "24px", color: "#000000", textAlign: "center", marginTop:'20px', fontWeight:'500' }}
         >
           Meal History
         </Typography>
         <Box sx={{
             marginBlock: "10px",
-            height: "calc(100vh - 100px)",
+            height: "calc(100vh - 150px)",
             overflowY: "auto",
             "&::-webkit-scrollbar": {
-              width: "8px",
+              width: "4px",
             },
             "&::-webkit-scrollbar-thumb": {
               backgroundColor: "#888",
