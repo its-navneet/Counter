@@ -10,7 +10,7 @@ import { MobileDatePicker } from "@mui/x-date-pickers";
 
 export default function Home() {
   const [value, setValue] = React.useState<Dayjs | null>(
-    dayjs("2022-04-17T15:30")
+    dayjs(new Date().toISOString())
   );
   const [totalLunch, setTotalLunch] = useState(0);
   const [totalDinner, setTotalDinner] = useState(0);
