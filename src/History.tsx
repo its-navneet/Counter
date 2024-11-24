@@ -50,10 +50,11 @@ export default function History() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          padding: "10px",
+          paddingInline: "40px",
+          paddingBlock: "8px",
           width: "100%",
           mr: 2,
-          fontSize: "14px",
+          fontSize: "16px",
         }}
       >
         <ListItemText
@@ -67,7 +68,7 @@ export default function History() {
                     backgroundColor: "blue",
                     borderRadius: 1,
                     color: "white",
-                    p: "4px",
+                    p: "6px",
                     mr: 1,
                     fontSize: "14px",
                   }}
@@ -82,7 +83,7 @@ export default function History() {
                     backgroundColor: "green",
                     borderRadius: 1,
                     color: "white",
-                    p: "4px",
+                    p: "6px",
                     fontSize: "14px",
                   }}
                 >
